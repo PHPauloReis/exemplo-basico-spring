@@ -32,4 +32,12 @@ public class ProductService {
 
         return product.get();
     }
+
+    public List<Product> findByName(String name) {
+        return productRepository.findByName(name);
+    }
+
+    public List<Product> findSpecialPromo(int price) {
+        return productRepository.findSpecialPromo(price);
+    }
 }
